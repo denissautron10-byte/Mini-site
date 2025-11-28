@@ -25,6 +25,7 @@
         'figma:asset/3f2a6aead57a6996702fda6fd4aa98b88f8c13c4.png': path.resolve(__dirname, './src/assets/3f2a6aead57a6996702fda6fd4aa98b88f8c13c4.png'),
         'figma:asset/3b1f86e1d368b4a4ad4c536637fa5a661ba449e3.png': path.resolve(__dirname, './src/assets/3b1f86e1d368b4a4ad4c536637fa5a661ba449e3.png'),
         'figma:asset/16f0abb50a20715ea567e2562756298d4ee4faa0.png': path.resolve(__dirname, './src/assets/16f0abb50a20715ea567e2562756298d4ee4faa0.png'),
+        'figma:asset/Design simple.png': path.resolve(__dirname, './src/assets/Design simple.png'), // Added this line
         'embla-carousel-react@8.6.0': 'embla-carousel-react',
         'cmdk@1.1.1': 'cmdk',
         'class-variance-authority@0.7.1': 'class-variance-authority',

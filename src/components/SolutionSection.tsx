@@ -5,6 +5,7 @@ import screenshotPoleCible from "figma:asset/b65090187496fbd3a59e9c58d6ccdf5bb0e
 import screenshotFeedback from "figma:asset/b87fd4baa2ea313ad767134e20fe7f9ba5595f9d.png";
 import screenshotEpingle from "figma:asset/3f2a6aead57a6996702fda6fd4aa98b88f8c13c4.png";
 import screenshotWiki from "figma:asset/3b1f86e1d368b4a4ad4c536637fa5a661ba449e3.png";
+import screenshotDesignSimple from "figma:asset/Design simple.png"; // New import
 import { motion, AnimatePresence } from "motion/react";
 import { useState, useEffect } from "react";
 
@@ -24,8 +25,16 @@ export function SolutionSection() {
   }, [selectedImage]);
   const features = [
     {
-      icon: Target,
+      icon: Pin, // Using Pin for the new feature
       number: "01",
+      title: "1. Le pôle précis",
+      subtitle: "Travaillez dans une interface simple", // New subtitle as requested
+      description: "Avec une interface claire et intuitive, vous vous concentrez sur l'essentiel et gagnez du temps. Chaque outil est à sa place, pour une expérience utilisateur fluide et intuitive.",
+      color: "blue" // Using blue for the new feature
+    },
+    {
+      icon: Target,
+      number: "02", // Updated from 01
       title: "Le pôle cible",
       subtitle: "Fini les distractions",
       description: "Assignez automatiquement le feedback au bon membre de l'équipe. Designers, développeurs, chefs de projet : chacun reçoit uniquement ce qui le concerne, avec le type de priorité associé.",
@@ -33,19 +42,19 @@ export function SolutionSection() {
     },
     {
       icon: MessageSquare,
-      number: "02",
+      number: "03", // Updated from 02
       title: "L'épingle précise",
       subtitle: "Autour du feedback",
       description: "Discutez en temps réel avec les membres de l'équipe concernés puis résolvez le problème grâce à un commentaire ciblé. Vous avez la possibilité d'importer une autre photo de la potentielle solution.",
-      color: "blue"
+      color: "green" // Changed to green for diversity, can be adjusted
     },
     {
       icon: BookOpen,
-      number: "03",
+      number: "04", // Updated from 03
       title: "Wiki",
       subtitle: "Début de l'apprentissage",
       description: "Construisez une base de connaissances qui évite de refaire les mêmes erreurs. Retrouvez un feedback résolu il y a 6 mois, c'est possible ! La solution avant/après sera téléchargeable.",
-      color: "green"
+      color: "purple" // Changed to purple for diversity, can be adjusted
     }
   ];
 
@@ -83,11 +92,11 @@ export function SolutionSection() {
             transition={{ duration: 0.5 }}
           >
             
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-6 text-slate-900">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl mb-6 text-slate-900">
               La solution
             </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Trois fonctionnalités pour ne plus perdre de temps.
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              4 fonctionnalités pour ne plus perdre de temps.
             </p>
           </motion.div>
 
@@ -116,28 +125,46 @@ export function SolutionSection() {
                           <Icon className={`w-8 h-8 ${colors.text} relative z-10`} />
                           <div className={`absolute inset-0 ${colors.bg} rounded-2xl blur-xl opacity-50`}></div>
                         </div>
-                        <span className={`text-5xl ${colors.text} opacity-20`}>{feature.number}</span>
+                        <span className={`text-4xl ${colors.text} opacity-20`}>{feature.number}</span>
                       </div>
 
                       {/* Title & Description */}
                       <div className="space-y-4">
                         <div>
-                          <h3 className="text-3xl lg:text-4xl text-slate-900 mb-2">
+                          <h3 className="text-2xl lg:text-3xl text-slate-900 mb-2">
                             {feature.title}
                           </h3>
                           <p className={`text-sm ${colors.text} uppercase tracking-wider`}>
                             {feature.subtitle}
                           </p>
                         </div>
-                        <p className="text-lg text-slate-600 leading-relaxed">
+                        <p className="text-base text-slate-600 leading-relaxed">
                           {feature.description}
                         </p>
                       </div>
                     </div>
 
                     {/* Image Side - Simple et Clean */}
-                    <div className="flex-1 min-w-0">
-                      {index === 0 && (
+                    <div className="flex-1 min-w-0 lg:max-w-md"> {/* Reduced to lg:max-w-md for smaller images */}
+                      {index === 0 && ( // New feature image
+                        <div className="relative group cursor-pointer" onClick={() => setSelectedImage({ src: screenshotDesignSimple, alt: "Interface simple et épurée" })}>
+                          {/* Zoom indicator */}
+                          <div className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
+                            <ZoomIn className="w-4 h-4 text-slate-700" />
+                          </div>
+                          
+                          {/* Image container - Simple */}
+                          <div className="relative rounded-2xl overflow-hidden bg-white shadow-xl border border-slate-200 group-hover:shadow-2xl transition-all duration-300">
+                            <img 
+                              src={screenshotDesignSimple}
+                              alt="Interface simple et épurée"
+                              className="w-full h-auto"
+                            />
+                          </div>
+                        </div>
+                      )}
+                      
+                      {index === 1 && ( // Original first feature, now second
                         <div className="relative group cursor-pointer" onClick={() => setSelectedImage({ src: screenshotFeedback, alt: "Interface de gestion de feedback" })}>
                           {/* Zoom indicator */}
                           <div className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
@@ -155,7 +182,7 @@ export function SolutionSection() {
                         </div>
                       )}
                       
-                      {index === 1 && (
+                      {index === 2 && ( // Original second feature, now third
                         <div className="relative group cursor-pointer" onClick={() => setSelectedImage({ src: screenshotEpingle, alt: "Interface d'épingle de feedback" })}>
                           {/* Zoom indicator */}
                           <div className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
@@ -173,7 +200,7 @@ export function SolutionSection() {
                         </div>
                       )}
                       
-                      {index === 2 && (
+                      {index === 3 && ( // Original third feature, now fourth
                         <div className="relative group cursor-pointer" onClick={() => setSelectedImage({ src: screenshotWiki, alt: "Interface Wiki de Whalys" })}>
                           {/* Zoom indicator */}
                           <div className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">

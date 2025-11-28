@@ -45,7 +45,7 @@ export function FaqSection() {
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl my-[0px] mx-[31px] p-[0px] mt-[10px] mr-[31px] mb-[0px] ml-[31px] rounded-[1px]">
+        <div className="max-w-4xl mx-auto mt-[10px] rounded-[1px]">
           {/* Section Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-2xl mb-6">

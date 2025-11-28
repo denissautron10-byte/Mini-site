@@ -35,12 +35,7 @@ export function HeroSection() {
 
           {/* Trust indicators */}
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-8 sm:mb-10 text-slate-400 text-sm px-4">
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4" />
-              <span>Essai gratuit 30 jours</span>
-            </div>
-            
-            
+            {/* Removed: Essai gratuit 30 jours */}
           </div>
 
           {/* CTA Buttons */}
