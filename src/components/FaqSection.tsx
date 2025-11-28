@@ -26,7 +26,7 @@ export function FaqSection() {
     },
     {
       question: "Combien coûte Whalys après la période d'essai ?",
-      answer: "Le tarif est de 15€ par personne et par mois, avec une facture spéciale pour chaque agence. Tous nos plans incluent le support, les mises à jour et l'archivage illimité."
+      answer: "Le tarif est de 20€ par personne et par mois, avec une facture spéciale pour chaque agence. Tous nos plans incluent le support, les mises à jour et l'archivage illimité."
     },
     {
       question: "Peut-on vraiment économiser 20 heures par mois ?",

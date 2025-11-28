@@ -5,14 +5,14 @@ import { Check } from "lucide-react";
 export function PricingSection() {
   const plan = {
     name: "Tarif Simple",
-    price: "15",
+    price: "20",
     users: "Par personne",
     features: [
-      "Jusqu'à 10 projets en simultané",
+      "Jusqu\'à 10 projets en simultané",
       "Toutes les fonctionnalités",
       "Mises à jour incluses",
       "Archivage illimité",
-      "Formation de l'équipe",
+      "Formation de l\'équipe",
       "Gestionnaire de compte dédié"
     ]
   };

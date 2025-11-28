@@ -28,7 +28,7 @@ export function SolutionSection() {
       number: "01",
       title: "Le pôle cible",
       subtitle: "Fini les distractions",
-      description: "Assignez automatiquement le feedback au bon membre de l'équipe. Designers, développeurs, chefs de projet : chacun reçoit uniquement ce qui le concerne.",
+      description: "Assignez automatiquement le feedback au bon membre de l'équipe. Designers, développeurs, chefs de projet : chacun reçoit uniquement ce qui le concerne, avec le type de priorité associé.",
       color: "purple"
     },
     {
@@ -44,7 +44,7 @@ export function SolutionSection() {
       number: "03",
       title: "Wiki",
       subtitle: "Début de l'apprentissage",
-      description: "Construisez une base de connaissances qui évite de refaire les mêmes erreurs. Retrouvez un feedback résolu il y a 6 mois, c'est possible !",
+      description: "Construisez une base de connaissances qui évite de refaire les mêmes erreurs. Retrouvez un feedback résolu il y a 6 mois, c'est possible ! La solution avant/après sera téléchargeable.",
       color: "green"
     }
   ];

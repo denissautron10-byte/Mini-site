@@ -63,7 +63,7 @@ export function LunaSection() {
             className="text-center mb-8 sm:mb-12 lg:mb-16"
           >
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl mb-4 sm:mb-6 text-white px-4">
-              Votre assistant IA{" "}
+              Votre assistante IA{" "}
               
             </h2>
 
