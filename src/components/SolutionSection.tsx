@@ -27,7 +27,7 @@ export function SolutionSection() {
     {
       icon: Pin, // Using Pin for the new feature
       number: "01",
-      title: "1. Le pôle précis",
+      title: "La simplicité",
       subtitle: "Travaillez dans une interface simple", // New subtitle as requested
       description: "Avec une interface claire et intuitive, vous vous concentrez sur l'essentiel et gagnez du temps. Chaque outil est à sa place, pour une expérience utilisateur fluide et intuitive.",
       color: "blue" // Using blue for the new feature
