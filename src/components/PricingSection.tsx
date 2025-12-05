@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 export function PricingSection() {
   const plan = {
     name: "Tarif Simple",
-    price: "20",
+    price: "15",
     users: "Par personne",
     features: [
       "Jusqu\'à 10 projets en simultané",

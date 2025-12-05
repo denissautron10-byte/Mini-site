@@ -9,28 +9,28 @@ import { HelpCircle } from "lucide-react";
 export function FaqSection() {
   const faqs = [
     {
-      question: "Comment fonctionne la période d'essai gratuite ?",
-      answer: "Vous bénéficiez de 30 jours d'essai complet sans aucune carte bancaire requise. Vous aurez accès à toutes les fonctionnalités de Whalys pour tester la plateforme avec votre équipe sur vos vrais projets."
+      question: "Comment fonctionne la période d\'essai gratuite ?",
+      answer: "Vous bénéficiez de 30 jours d\'essai complet sans aucune carte bancaire requise. Vous aurez accès à toutes les fonctionnalités de Whalys pour tester la plateforme avec votre équipe sur vos vrais projets."
     },
     {
       question: "Combien de temps faut-il pour mettre en place Whalys ?",
       answer: "La mise en place est immédiate. En moins de 15 minutes, votre équipe peut commencer à utiliser Whalys."
     },
     {
-      question: "Que se passe-t-il avec nos données si nous arrêtons l'abonnement ?",
-      answer: "Vos données vous appartiennent. Vous pouvez exporter l'intégralité de votre base de connaissances et de vos feedbacks à tout moment. Après résiliation, vous ne pourrez plus créer de studio et votre studio sera supprimé dans les 15 jours qui suivent."
+      question: "Que se passe-t-il avec nos données si nous arrêtons l\'abonnement ?",
+      answer: "Vos données vous appartiennent. Vous pouvez exporter l\'intégralité de votre base de connaissances et de vos feedbacks à tout moment. Après résiliation, vous ne pourrez plus créer de studio et votre studio sera supprimé dans les 15 jours qui suivent."
     },
     {
       question: "Le support client est-il vraiment en français et local ?",
       answer: "Absolument. Notre équipe support est basée à la Réunion et parle créole si besoin. Nous répondons en moins de 2 heures pendant les horaires de bureau (GMT+4)."
     },
     {
-      question: "Combien coûte Whalys après la période d'essai ?",
-      answer: "Le tarif est de 20€ par personne et par mois, avec une facture spéciale pour chaque agence. Tous nos plans incluent le support, les mises à jour et l'archivage illimité."
+      question: "Combien coûte Whalys après la période d\'essai ?",
+      answer: "Le tarif est de 15€ par personne et par mois, avec une facture spéciale pour chaque agence. Tous nos plans incluent le support, les mises à jour et l\'archivage illimité."
     },
     {
       question: "Peut-on vraiment économiser 20 heures par mois ?",
-      answer: "C'est à peu près le gain que nous attendons de cette application. Le gain dépend de votre volume de projets et de la taille de votre équipe."
+      answer: "C\'est à peu près le gain que nous attendons de cette application. Le gain dépend de votre volume de projets et de la taille de votre équipe."
     },
     {
       question: "Mes données sont-elles sécurisées ?",
