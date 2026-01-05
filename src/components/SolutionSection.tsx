@@ -19,7 +19,7 @@ export function SolutionSection() {
     {
       icon: MessageSquarePlus,
       title: "3. Sous-discussions",
-      description: "Ne mélangez plus tout. Pour chaque projet, créez jusqu'à 5 sous-discussions dédiées (ex: \"Logo\", \"Retouches Vidéo\", \"Facturation\"). Chaque média (photo, vidéo, vocal) est attaché à sa discussion précise. Besoin de retrouver le brief du logo ? Ouvrez la discussion \"Logo\". Tout est là, rien ne se perd dans le flux global.",
+      description: "Ne mélangez plus tout. Pour chaque discussion projet, créez jusqu'à 5 sous-discussions dédiées (ex: \"Logo\", \"Retouches Vidéo\", \"Facturation\"). Chaque média (photo, vidéo, vocal) est attaché à sa discussion précise. Besoin de retrouver le brief du logo ? Ouvrez la discussion \"Logo\". Tout est là, rien ne se perd dans le flux global.",
       color: "purple"
     },
     {
