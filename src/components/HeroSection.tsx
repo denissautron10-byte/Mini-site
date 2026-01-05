@@ -23,14 +23,12 @@ export function HeroSection() {
 
           {/* Main Title */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl mb-6 text-white max-w-4xl mx-auto px-2 sm:px-4">
-            Transformez chaque feedback en action claire et{" "}
-            <span className="text-blue-400">valorisez vos apprentissages</span>
+            Offrez à vos clients l'expérience d'une agence
           </h1>
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg lg:text-xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed px-4 sm:px-8 lg:px-16">
-            Whalys est la solution locale qui élimine le flou des feedback pour vos chefs de projet, designers et développeurs. 
-            Elle archive les leçons pour que vous ne perdiez plus jamais d'argent sur la même erreur.
+            La plateforme de collaboration entre freelances et clients, conçue pour la sérénité et la rentabilité.
           </p>
 
           {/* Trust indicators */}

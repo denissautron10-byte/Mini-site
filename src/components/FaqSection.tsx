@@ -4,82 +4,59 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
-import { HelpCircle } from "lucide-react";
 
 export function FaqSection() {
   const faqs = [
     {
       question: "Comment fonctionne la période d\'essai gratuite ?",
-      answer: "Vous bénéficiez de 30 jours d\'essai complet sans aucune carte bancaire requise. Vous aurez accès à toutes les fonctionnalités de Whalys pour tester la plateforme avec votre équipe sur vos vrais projets."
+      answer: "Vous profitez de 30 jours d\'essai pour gérer jusqu\'à 1 client et 1 discussion projet simultanément. Cela vous permet de tester les fonctionnalités de base et de voir comment Luna peut vous aider à collaborer avec votre client. Aucune carte bancaire n\'est requise pour commencer."
     },
     {
       question: "Combien de temps faut-il pour mettre en place Whalys ?",
-      answer: "La mise en place est immédiate. En moins de 15 minutes, votre équipe peut commencer à utiliser Whalys."
+      answer: "La mise en place est immédiate. En moins de 5 minutes, vous créez votre compte et vous pouvez déjà inviter votre premier client. Pas de formation complexe, l\'interface est pensée pour être intuitive."
     },
     {
-      question: "Que se passe-t-il avec nos données si nous arrêtons l\'abonnement ?",
-      answer: "Vos données vous appartiennent. Vous pouvez exporter l\'intégralité de votre base de connaissances et de vos feedbacks à tout moment. Après résiliation, vous ne pourrez plus créer de studio et votre studio sera supprimé dans les 15 jours qui suivent."
-    },
-    {
-      question: "Le support client est-il vraiment en français et local ?",
-      answer: "Absolument. Notre équipe support est basée à la Réunion et parle créole si besoin. Nous répondons en moins de 2 heures pendant les horaires de bureau (GMT+4)."
+      question: "Le support client est-il vraiment à La Réunion ?",
+      answer: "Oui, 100%. Nous sommes basés à Saint-Pierre (974). Vous avez un interlocuteur local qui comprend les réalités de votre business et qui répond en français, sans passer par un robot à l\'autre bout du monde."
     },
     {
       question: "Combien coûte Whalys après la période d\'essai ?",
-      answer: "Le tarif est de 15€ par personne et par mois, avec une facture spéciale pour chaque agence. Tous nos plans incluent le support, les mises à jour et l\'archivage illimité."
+      answer: "Veuillez nous contacter à contact@whalys.com pour en savoir plus sur nos tarifs."
     },
     {
       question: "Peut-on vraiment économiser 20 heures par mois ?",
-      answer: "C\'est à peu près le gain que nous attendons de cette application. Le gain dépend de votre volume de projets et de la taille de votre équipe."
+      answer: "Largement. En supprimant le temps de recherche (deuxième téléphone, scroll WhatsApp), en automatisant votre Wiki et en évitant les réunions de \"justification\" grâce aux preuves de validation, nos utilisateurs récupèrent en moyenne 5 heures par semaine."
     },
     {
       question: "Mes données sont-elles sécurisées ?",
-      answer: "Absolument. Vos données sont hébergées sur Supabase avec chiffrement complet, conformité RGPD garantie et infrastructure de niveau entreprise. Tout est sécurisé, sauvegardé automatiquement et vous gardez le contrôle total de vos informations."
+      answer: "Absolument. Vos échanges et vos fichiers sont chiffrés et stockés sur des serveurs sécurisés. Seuls vous et vos clients avez accès à vos projets. La confidentialité est notre priorité."
     }
   ];
 
   return (
-    <section id="faq" className="relative bg-gradient-to-b from-slate-50 to-white overflow-hidden lg:pt-28 lg:pb-40 pt-[50px] pr-[0px] pb-[100px] pl-[0px]">
-      {/* Decorative elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-72 h-72 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
-      
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto mt-[10px] rounded-[1px]">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-2xl mb-6">
-              <HelpCircle className="w-8 h-8 text-blue-600" />
-            </div>
-            <h2 className="text-3xl sm:text-4xl mb-4 text-slate-900">
+    <section id="faq" className="py-20 lg:py-28 bg-slate-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="max-w-md mx-auto md:max-w-none text-center md:text-left">
+            <h2 className="text-2xl sm:text-3xl mb-6 text-slate-900">
               Questions fréquentes
             </h2>
-            <p className="text-lg text-slate-600">
-              Tout ce que vous devez savoir.
+            <p className="text-base text-slate-600 mb-8">
+              Tout ce que vous devez savoir pour démarrer sereinement.
             </p>
           </div>
-
-          {/* FAQ Accordion */}
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="w-full max-w-lg mx-auto md:max-w-none">
             {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="border-none bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 px-6 overflow-hidden"
-              >
-                <AccordionTrigger className="text-left hover:no-underline py-6 group">
-                  <span className="text-slate-900 pr-4">
-                    {faq.question}
-                  </span>
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger className="text-left text-base hover:no-underline">
+                  {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className={`text-slate-600 leading-relaxed -mt-1 ${index === faqs.length - 1 ? 'pb-5' : 'pb-4'}`}>
+                <AccordionContent className="text-sm text-slate-600">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
-
-          
         </div>
       </div>
     </section>

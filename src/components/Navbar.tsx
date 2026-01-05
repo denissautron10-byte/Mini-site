@@ -21,6 +21,7 @@ export function Navbar() {
     { label: "Fonctionnalités", href: "#fonctionnalites" },
     { label: "Tarifs", href: "#tarifs" },
     { label: "IA", href: "#luna" },
+    { label: "À propos", href: "#about" },
     { label: "FAQ", href: "#faq" }
   ];
 

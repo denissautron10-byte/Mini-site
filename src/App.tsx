@@ -6,6 +6,7 @@ import { SolutionSection } from "./components/SolutionSection";
 import { FeaturesDetailSection } from "./components/FeaturesDetailSection";
 import { PricingSection } from "./components/PricingSection";
 import { LunaSection } from "./components/LunaSection";
+import { AboutSection } from "./components/AboutSection";
 import { FaqSection } from "./components/FaqSection";
 import { Footer } from "./components/Footer";
 
@@ -20,6 +21,7 @@ export default function App() {
       <FeaturesDetailSection />
       <PricingSection />
       <LunaSection />
+      <AboutSection />
       <FaqSection />
       <Footer />
     </div>
