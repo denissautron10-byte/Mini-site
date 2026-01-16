@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import { Search, CheckCircle, BarChart, Rocket } from "lucide-react";
-import lunaImage from "figma:asset/67e4d64410a6c4da0a5f19e051dbb273b46b1028.png";
+import { Search, CheckCircle, BarChart } from "lucide-react";
+import lunaImage from "../assets/67e4d64410a6c4da0a5f19e051dbb273b46b1028.png";
 
 export function LunaSection() {
 
@@ -85,7 +85,7 @@ export function LunaSection() {
                   Plus besoin de quitter votre projet
                 </h3>
                 <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-                  Pourquoi ouvrir Gemini ou ChatGPT dans une autre page ? Luna est là pour formuler vos messages clients à votre place, directement dans la discussion. Elle adapte votre ton pour rester pro, même quand vous êtes pressé.
+                  Luna n'est pas là pour formuler les messages à votre place, mais pour vous éviter d'aller sur Gemini ou d'autres IA. Elle vous aide à rester concentré sur votre travail.
                 </p>
               </div>
 
@@ -111,24 +111,6 @@ export function LunaSection() {
                   </li>
                 </ul>
               </div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.5 }}
-                className="p-5 sm:p-6 bg-blue-500/10 border border-blue-500/30 rounded-xl backdrop-blur-xl"
-              >
-                <div className="flex items-start gap-4">
-                  <Rocket className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 flex-shrink-0 mt-1" />
-                  <div className="space-y-2">
-                    <h4 className="text-white">Bientôt disponible</h4>
-                    <p className="text-xs leading-relaxed text-slate-300">
-                      Luna devient le moteur de recherche ultime de votre business. Elle ne se contente pas de stocker vos données, elle les comprend pour vous faire gagner 1h de gestion par jour.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
             </motion.div>
           </div>
         </div>

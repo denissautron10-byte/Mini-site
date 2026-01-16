@@ -1,8 +1,7 @@
-import image_16f0abb50a20715ea567e2562756298d4ee4faa0 from 'figma:asset/16f0abb50a20715ea567e2562756298d4ee4faa0.png';
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
-import whalysLogo from "figma:asset/50e8fdae22da15d43489f28c6b15fc1c36c2aa89.png";
+import Logo from "../assets/Logo.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,9 +36,9 @@ export function Navbar() {
           <a href="#" className="flex items-center gap-3 group">
             
             <img 
-              src={image_16f0abb50a20715ea567e2562756298d4ee4faa0} 
+              src={Logo} 
               alt="Whalys" 
-              className="h-12"
+              className="h-12 w-auto"
             />
           </a>
 

@@ -9,7 +9,7 @@ export function FaqSection() {
   const faqs = [
     {
       question: "Comment fonctionne la période d\'essai gratuite ?",
-      answer: "Vous profitez de 30 jours d\'essai pour gérer jusqu\'à 1 client et 1 discussion projet simultanément. Cela vous permet de tester les fonctionnalités de base et de voir comment Luna peut vous aider à collaborer avec votre client. Aucune carte bancaire n\'est requise pour commencer."
+      answer: "Pendant 30 jours, vous avez un accès complet à la plateforme. Vous pouvez gérer jusqu'à 5 clients, créer jusqu'à 3 projets pour chacun d'eux, et organiser vos conversations avec 5 sous-discussions par projet. C'est l'occasion idéale de découvrir comment Whalys et l'IA Luna Boost peuvent transformer votre workflow, sans aucune carte bancaire requise pour démarrer."
     },
     {
       question: "Combien de temps faut-il pour mettre en place Whalys ?",
@@ -21,7 +21,7 @@ export function FaqSection() {
     },
     {
       question: "Combien coûte Whalys après la période d\'essai ?",
-      answer: "Veuillez nous contacter à contact@whalys.com pour en savoir plus sur nos tarifs."
+      answer: "Après les 30 jours d'essai gratuit, l'accès à Whalys est de 15€ par mois. Cet abonnement vous garantit un accès illimité à toutes les fonctionnalités, incluant Luna Boost, pour continuer à gérer vos projets sereinement."
     },
     {
       question: "Peut-on vraiment économiser 20 heures par mois ?",

@@ -1,14 +1,5 @@
-import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import logoImage from "figma:asset/16f0abb50a20715ea567e2562756298d4ee4faa0.png";
-
-// Threads icon component
-const ThreadsIcon = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
-    <path d="M12.186 3.003c2.03 0 3.687.593 4.933 1.761 1.246 1.169 1.87 2.78 1.87 4.808h-2.885c0-1.23-.328-2.156-.98-2.764-.652-.608-1.602-.914-2.848-.914-1.246 0-2.196.306-2.848.914-.652.608-.98 1.534-.98 2.764 0 .608.11 1.141.328 1.598.218.457.537.838.956 1.141-.42.304-.924-.533-1.513-.686-.589-.153-1.246-.23-1.97-.23-1.63 0-2.994-.38-4.09-1.141-1.097-.76-1.645-1.902-1.645-3.424 0-2.028.624-3.639 1.87-4.808C8.499 3.596 10.156 3.003 12.186 3.003z"/>
-  </svg>
-);
+import { Mail, MapPin, Instagram } from "lucide-react";
+import logoImage from "../assets/Logo.png";
 
 export function Footer() {
   return (

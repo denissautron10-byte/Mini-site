@@ -29,7 +29,7 @@ export function ProblemSection() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-6 text-white">
               Les difficultés
             </h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
               Chaque message perdu est une heure de vie personnelle en moins.
             </p>
           </div>
@@ -46,7 +46,7 @@ export function ProblemSection() {
                     <Icon className="w-7 h-7 text-red-400" />
                   </div>
                   <h3 className="text-xl mb-4 text-white">{problem.title}</h3>
-                  <p className="text-slate-400">{problem.description}</p>
+                  <p className="text-slate-400 text-sm">{problem.description}</p>
                 </Card>
               );
             })}

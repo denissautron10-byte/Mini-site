@@ -1,4 +1,4 @@
-import { Users, Mail, MessageSquarePlus, Paperclip, ShieldCheck } from "lucide-react";
+import { Users, Mail, MessageSquarePlus, ShieldCheck } from "lucide-react";
 import { motion } from "motion/react";
 import { Card } from "./ui/card";
 
@@ -23,14 +23,8 @@ export function SolutionSection() {
       color: "purple"
     },
     {
-      icon: Paperclip,
-      title: "4. Contexte multimédia",
-      description: "Importez vos fichiers là où ils doivent être. Plus besoin de scroller 3 mois de photos perso ou de messages vocaux divers pour retrouver une validation. Vos assets sont rangés par sujet, accessibles instantanément par vous et votre client.",
-      color: "green"
-    },
-    {
       icon: ShieldCheck,
-      title: "La preuve par Wiki",
+      title: "4. La preuve par Wiki",
       description: "Chaque étape clé est validée d'un clic et archivée. S'il y a un doute ou une demande de retouche supplémentaire, vous avez la preuve irréfutable de ce qui a été dit et accepté, protégeant ainsi votre crédibilité et votre temps.",
       color: "blue"
     }

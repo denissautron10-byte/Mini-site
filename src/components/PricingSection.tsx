@@ -5,27 +5,16 @@ import { Check } from "lucide-react";
 export function PricingSection() {
   const plans = [
     {
-      name: "Gratuit",
+      name: "Essai gratuit",
       price: "0",
-      users: "",
+      users: "30 jours d'essai",
       features: [
-        "Créer jusqu'à 1 discussion projet par client.",
-        "Gérez 1 client.",
+        "Gérez jusqu'à 5 clients.",
+        "Jusqu'à 3 projets par client.",
+        "5 sous-discussions par projet.",
         "Archivage illimité.",
         "Support local.",
-        "IA Luna"
-      ]
-    },
-    {
-      name: "Payant",
-      price: "15",
-      users: "",
-      features: [
-        "Créer 3 discussions projet par client.",
-        "Gérez 5 clients en simultané.",
-        "Archivage illimité.",
-        "Support local.",
-        "IA Luna Boost"
+        "IA Luna Boost."
       ]
     }
   ];
@@ -45,7 +34,7 @@ export function PricingSection() {
           </div>
 
           {/* Pricing Cards */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
             {plans.map((plan, index) => (
               <Card key={index} className="p-8 bg-transparent border-2 border-white shadow-xl">
                 <div className="text-center mb-6">
@@ -53,8 +42,8 @@ export function PricingSection() {
                   <p className="text-white/80 mb-4">{plan.users}</p>
                   <div className="flex items-baseline justify-center gap-1">
                     <span className="text-5xl text-white">{plan.price}€</span>
-                    <span className="text-white/80">/mois</span>
                   </div>
+                  <p className="text-white/80 text-sm mt-1">Puis 15€/mois</p>
                 </div>
 
                 <ul className="space-y-4 mb-8">
@@ -66,17 +55,11 @@ export function PricingSection() {
                   ))}
                 </ul>
 
-                {plan.name === 'Payant' ? (
-                  <Button className="w-full bg-slate-400 text-slate-600 cursor-not-allowed" disabled>
-                    Bientôt disponible
-                  </Button>
-                ) : (
-                  <Button className="w-full bg-white text-slate-900 hover:bg-slate-100" asChild>
-                    <a href="https://docs.google.com/forms/d/1FmLr3DF6UZogsueZhgA-Wj4sePr2FWnJWR6u_oFIPWI/edit" target="_blank" rel="noopener noreferrer">
-                      Essai gratuit
-                    </a>
-                  </Button>
-                )}
+                <Button className="w-full bg-white text-slate-900 hover:bg-slate-100" asChild>
+                  <a href="https://docs.google.com/forms/d/1FmLr3DF6UZogsueZhgA-Wj4sePr2FWnJWR6u_oFIPWI/edit" target="_blank" rel="noopener noreferrer">
+                    Essai gratuit
+                  </a>
+                </Button>
               </Card>
             ))}
           </div>
