@@ -13,8 +13,7 @@ export function PricingSection() {
         "Jusqu'à 3 projets par client.",
         "5 sous-discussions par projet.",
         "Archivage illimité.",
-        "Support local.",
-        "IA Luna Boost."
+        "Support local."
       ]
     }
   ];
