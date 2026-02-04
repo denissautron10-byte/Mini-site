@@ -32,7 +32,7 @@ export function Footer() {
               {/* Social Links */}
               <div className="flex gap-3">
                 <a 
-                  href="https://www.instagram.com/whalystudio/" 
+                  href="https://www.instagram.com/whalys.fr/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors"
