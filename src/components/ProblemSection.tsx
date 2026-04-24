@@ -21,7 +21,7 @@ export function ProblemSection() {
   ];
 
   return (
-    <section id="fonctionnalites" className="relative bg-slate-950 overflow-hidden py-[70px] lg:py-32 py-[80px] px-[0px]">      
+    <section id="fonctionnalites" className="relative bg-slate-900 border-t border-slate-800 overflow-hidden py-[70px] lg:py-32 py-[80px] px-[0px]">      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
@@ -40,7 +40,7 @@ export function ProblemSection() {
               return (
                 <Card 
                   key={index}
-                  className="p-8 bg-slate-900"
+                  className="p-8 bg-slate-950"
                 >
                   <div className="w-14 h-14 bg-red-500/10 rounded-xl flex items-center justify-center mb-6">
                     <Icon className="w-7 h-7 text-red-400" />

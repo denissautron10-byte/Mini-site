@@ -5,16 +5,28 @@ import { Check } from "lucide-react";
 export function PricingSection() {
   const plans = [
     {
-      name: "Essai gratuit",
+      name: "Gratuit",
       price: "0",
-      users: "30 jours d'essai",
+      users: "Actuel",
       features: [
-        "Gérez jusqu'à 5 clients.",
-        "Jusqu'à 3 projets par client.",
-        "5 sous-discussions par projet.",
-        "Archivage illimité.",
-        "Support local."
-      ]
+        "1 client maximum",
+        "2 projets maximum",
+        "Wiki de validation illimité",
+      ],
+      cfa: "Passer au forfait Gratuit",
+      link: "https://docs.google.com/forms/d/1FmLr3DF6UZogsueZhgA-Wj4sePr2FWnJWR6u_oFIPWI/edit"
+    },
+    {
+      name: "Pro",
+      price: "7",
+      users: "Recommandé",
+      features: [
+        "5 clients maximum",
+        "5 projets maximum",
+        "Wiki de validation illimité"
+      ],
+      cfa: "Passer au forfait Pro",
+      link: "https://docs.google.com/forms/d/1FmLr3DF6UZogsueZhgA-Wj4sePr2FWnJWR6u_oFIPWI/edit"
     }
   ];
 
@@ -33,7 +45,7 @@ export function PricingSection() {
           </div>
 
           {/* Pricing Cards */}
-          <div className="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {plans.map((plan, index) => (
               <Card key={index} className="p-8 bg-transparent border-2 border-white shadow-xl">
                 <div className="text-center mb-6">
@@ -41,8 +53,8 @@ export function PricingSection() {
                   <p className="text-white/80 mb-4">{plan.users}</p>
                   <div className="flex items-baseline justify-center gap-1">
                     <span className="text-5xl text-white">{plan.price}€</span>
+                     <span className="text-white/80">/ mois</span>
                   </div>
-                  <p className="text-white/80 text-sm mt-1">Puis 15€/mois</p>
                 </div>
 
                 <ul className="space-y-4 mb-8">
@@ -55,8 +67,8 @@ export function PricingSection() {
                 </ul>
 
                 <Button className="w-full bg-white text-slate-900 hover:bg-slate-100" asChild>
-                  <a href="https://docs.google.com/forms/d/1FmLr3DF6UZogsueZhgA-Wj4sePr2FWnJWR6u_oFIPWI/edit" target="_blank" rel="noopener noreferrer">
-                    Essai gratuit
+                  <a href={plan.link} target="_blank" rel="noopener noreferrer">
+                    {plan.cfa}
                   </a>
                 </Button>
               </Card>

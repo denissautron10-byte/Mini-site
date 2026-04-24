@@ -1,20 +1,9 @@
 import { Button } from "./ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import lunaBackground from 'figma:asset/5ef386c671094d4b166c4eeada614d21da6745da.png';
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-slate-950">
-      
-      {/* Luna Background - outside container for full coverage */}
-      <div className="absolute inset-0 pointer-events-none opacity-20 overflow-hidden">
-        <img 
-          src={lunaBackground} 
-          alt="" 
-          className="absolute inset-0 w-full h-full object-cover sm:object-contain sm:left-auto sm:translate-x-0 sm:right-0 sm:top-2/3 sm:-translate-y-1/2 sm:w-auto sm:h-[1000px] lg:h-[1200px] sm:scale-[1.8] lg:scale-150"
-        />
-      </div>
-
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="max-w-5xl mx-auto text-center pt-12 sm:pt-16 lg:pt-20">
